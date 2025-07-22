@@ -5,6 +5,7 @@ public enum Logging {
         name: "Logging",
         destinations: [.iPhone, .appleWatch, .mac],
         dependencies: [
+            .external(FactoryKit.target),
             .external(TelemetryDeck.target),
         ]
     )
