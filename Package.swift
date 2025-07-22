@@ -8,8 +8,13 @@ import ProjectDescriptionHelpers
 let packageSettings = PackageSettings(
     productTypes: [
         "TelemetryClient": .framework,
+        "TelemetryDeck": .framework,
     ],
-    baseSettings: Shared.settings
+    baseSettings: Shared.settings,
+    targetSettings: [
+        "TelemetryClient": Shared.settings,
+        "TelemetryDeck": Shared.settings,
+    ]
 )
 #endif
 
