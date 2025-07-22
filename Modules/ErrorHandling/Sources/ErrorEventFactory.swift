@@ -2,7 +2,8 @@
 //  Copyright © 2024 Cocoatype, LLC. All rights reserved.
 
 import Foundation
-import Logging
+
+import FiveLogging
 
 struct EventFactory {
     func event(from error: Error, module: StaticString, type: StaticString) -> Event {

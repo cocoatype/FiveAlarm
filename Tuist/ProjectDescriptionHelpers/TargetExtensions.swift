@@ -9,7 +9,7 @@ extension Target {
         dependencies: [TargetDependency] = []
     ) -> Target {
         Target.target(
-            name: name,
+            name: "Five\(name)",
             destinations: destinations,
             product: .framework,
             bundleId: "\(Shared.bundleID).\(name)",
@@ -34,13 +34,13 @@ extension Target {
         dependencies: [TargetDependency] = []
     ) -> Target {
         return Target.target(
-            name: "\(name)Tests",
+            name: "Five\(name)Tests",
             destinations: [.iPhone],
             product: .unitTests,
             bundleId: "\(Shared.bundleID).\(name)Tests",
             sources: ["Modules/\(name)/Tests/**"],
             resources: hasResources ? ["Modules/\(name)/TestResources/**"] : nil,
-            dependencies: [.target(name: name)] + dependencies
+            dependencies: [.target(name: "Five\(name)")] + dependencies
         )
     }
 
@@ -49,13 +49,13 @@ extension Target {
         dependencies: [TargetDependency] = []
     ) -> Target {
         return Target.target(
-            name: "\(name)Doubles",
+            name: "Five\(name)Doubles",
             destinations: [.iPhone],
             product: .framework,
             bundleId: "\(Shared.bundleID).\(name)Doubles",
             sources: ["Modules/\(name)/Doubles/**"],
             dependencies: [
-                .target(name: name),
+                .target(name: "Five\(name)"),
                 .target(TestHelpers.interfaceTarget),
             ] + dependencies,
             settings: .settings(

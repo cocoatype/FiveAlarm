@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-import Root
+import FiveRoot
 
 @main
 struct App: SwiftUI.App {

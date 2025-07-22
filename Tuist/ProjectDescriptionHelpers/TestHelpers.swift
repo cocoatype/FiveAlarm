@@ -2,12 +2,11 @@ import ProjectDescription
 
 public enum TestHelpers {
     public static let target = Target.target(
-        name: "TestHelpers",
+        name: "FiveTestHelpers",
         destinations: [.iPhone],
         product: .framework,
         bundleId: "\(Shared.bundleID).TestHelpers",
         sources: ["Modules/TestHelpers/Sources/**"],
-        headers: .headers(public: ["Modules/TestHelpers/Headers/**"]),
         dependencies: [
             .target(interfaceTarget),
             .xctest,
@@ -23,7 +22,7 @@ public enum TestHelpers {
     )
 
     public static let interfaceTarget = Target.target(
-        name: "TestHelpersInterface",
+        name: "FiveTestHelpersInterface",
         destinations: [.iPhone],
         product: .framework,
         bundleId: "\(Shared.bundleID).TestHelpersInterface",

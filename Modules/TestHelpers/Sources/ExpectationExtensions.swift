@@ -1,4 +1,5 @@
-import TestHelpersInterface
 import XCTest
 
-extension XCTestExpectation: TestHelpersInterface.Expectation {}
+import FiveTestHelpersInterface
+
+extension XCTestExpectation: FiveTestHelpersInterface.Expectation {}
