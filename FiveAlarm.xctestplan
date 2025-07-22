@@ -1,0 +1,56 @@
+{
+  "configurations" : [
+    {
+      "id" : "4FDE47B0-6B65-4F91-9BCC-6EC9757F8910",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:FiveAlarm.xcodeproj",
+          "identifier" : "E21D62E61F88205E8726C1BA",
+          "name" : "FiveErrorHandling"
+        },
+        {
+          "containerPath" : "container:FiveAlarm.xcodeproj",
+          "identifier" : "133A2684B98522B31B84BF9B",
+          "name" : "FiveLogging"
+        },
+        {
+          "containerPath" : "container:FiveAlarm.xcodeproj",
+          "identifier" : "069E82BAC7D146890FD1DC6E",
+          "name" : "FiveRoot"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FiveAlarm.xcodeproj",
+        "identifier" : "B9701F8A0D6FD6FA66B6D707",
+        "name" : "FiveRootTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FiveAlarm.xcodeproj",
+        "identifier" : "920DB386778939FCA5B82CED",
+        "name" : "FiveErrorHandlingTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FiveAlarm.xcodeproj",
+        "identifier" : "8F580B7F5D0FA7F6227AAB82",
+        "name" : "FiveLoggingTests"
+      }
+    }
+  ],
+  "version" : 1
+}

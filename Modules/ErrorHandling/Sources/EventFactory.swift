@@ -26,13 +26,6 @@ struct EventFactory {
         )
     }
 
-    func event(from message: StaticString) -> Event {
-        Event(
-            name: Event.Name(message),
-            info: [:]
-        )
-    }
-
     // MARK: Event Names
 
     private static let logError = Event.Name("TelemetryDeck.Error.occurred")

@@ -15,6 +15,8 @@ public enum ErrorHandling {
         dependencies: [
             .target(ErrorHandling.doublesTarget),
             .target(TestHelpers.target),
+            .external(FactoryKit.target),
+            .external(FactoryKit.testTarget),
         ]
     )
 

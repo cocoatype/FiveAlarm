@@ -11,6 +11,7 @@ public enum Root {
     public static let testTarget = Target.moduleTestTarget(
         name: "Root",
         dependencies: [
+            .external(ViewInspector.target),
         ]
     )
 }
