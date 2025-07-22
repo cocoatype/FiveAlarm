@@ -7,13 +7,25 @@ public struct ContentView: View {
     public init() {}
 
     public var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Color.clear
+            .toolbar {
+                ToolbarSpacer(placement: .bottomBar)
+                ToolbarItem(placement: .bottomBar) {
+                    Button {
+                    } label: {
+                        Image(systemName: "plus")
+                            .fontWeight(.bold)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(
+                        Color(
+                            red: 255.0 / 255.0,
+                            green: 66.0 / 255.0,
+                            blue: 41.0 / 255.0
+                        )
+                    )
+                }
+            }
     }
 }
 

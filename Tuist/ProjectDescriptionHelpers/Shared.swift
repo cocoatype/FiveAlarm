@@ -1,8 +1,8 @@
 import ProjectDescription
 
 public enum Shared {
-    public static let appName = "ProjectName"
-    public static let bundleID = "com.cocoatype.projectname"
+    public static let appName = "FiveAlarm"
+    public static let bundleID = "com.cocoatype.FiveAlarm"
     public static let settings: Settings = .settings(base: [
         "ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS": false,
         "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "Accent Color",
@@ -12,13 +12,14 @@ public enum Shared {
         "DEVELOPMENT_TEAM": "287EDDET2B",
         "ENABLE_HARDENED_RUNTIME[sdk=macosx*]": "YES",
         "ENABLE_USER_SCRIPT_SANDBOXING": true,
-        "IPHONEOS_DEPLOYMENT_TARGET": "17.0",
-        "MACOSX_DEPLOYMENT_TARGET": "14.0",
-        "WATCHOS_DEPLOYMENT_TARGET": "10.0",
-        "MARKETING_VERSION": "999",
-        "SWIFT_VERSION": "5.0",
+        "IPHONEOS_DEPLOYMENT_TARGET": "26.0",
+        "MACOSX_DEPLOYMENT_TARGET": "26.0",
+        "WATCHOS_DEPLOYMENT_TARGET": "26.0",
+        "MARKETING_VERSION": "25.0",
+        "SWIFT_VERSION": "6.0",
         "SWIFT_MAX_VERSION_1500": "5.0",
         "SWIFT_MAX_VERSION_1600": "6.0",
+        "SWIFT_MAX_VERSION_2600": "6.0",
         "SWIFT_MAX_VERSION": "$(SWIFT_MAX_VERSION_$(XCODE_VERSION_MAJOR))",
         "TARGETED_DEVICE_FAMILY": "1",
     ], debug: [

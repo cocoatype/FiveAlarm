@@ -9,10 +9,7 @@ let packageSettings = PackageSettings(
     productTypes: [
         "TelemetryClient": .framework,
     ],
-    baseSettings: Shared.settings,
-    targetSettings: [
-        :
-    ]
+    baseSettings: Shared.settings
 )
 #endif
 
