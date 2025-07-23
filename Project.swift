@@ -9,6 +9,8 @@ let project = Project(
         // products
         App.target,
         // modules
+        AlarmListUI.target,
+        DesignSystem.target,
         ErrorHandling.target,
         Logging.target,
         Root.target,
@@ -19,6 +21,8 @@ let project = Project(
         TestHelpers.target,
         TestHelpers.interfaceTarget,
         // tests
+        AlarmListUI.testTarget,
+        DesignSystem.testTarget,
         ErrorHandling.testTarget,
         Logging.testTarget,
         Root.testTarget,

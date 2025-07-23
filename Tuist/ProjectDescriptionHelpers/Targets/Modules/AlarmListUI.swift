@@ -1,16 +1,15 @@
 import ProjectDescription
 
-public enum Root {
+public enum AlarmListUI {
     public static let target = Target.moduleTarget(
-        name: "Root",
-        destinations: [.iPhone],
+        name: "AlarmListUI",
         dependencies: [
-            .target(AlarmListUI.target),
+            .target(DesignSystem.target),
         ]
     )
 
     public static let testTarget = Target.moduleTestTarget(
-        name: "Root",
+        name: "AlarmListUI",
         dependencies: [
             .external(ViewInspector.target),
         ]

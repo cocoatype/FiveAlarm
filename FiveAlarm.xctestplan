@@ -25,18 +25,21 @@
           "containerPath" : "container:FiveAlarm.xcodeproj",
           "identifier" : "069E82BAC7D146890FD1DC6E",
           "name" : "FiveRoot"
+        },
+        {
+          "containerPath" : "container:FiveAlarm.xcodeproj",
+          "identifier" : "7EAAEAB3CA85991A52ACE472",
+          "name" : "FiveAlarmListUI"
+        },
+        {
+          "containerPath" : "container:FiveAlarm.xcodeproj",
+          "identifier" : "4CFA8BFFDBCBA15930E3CF36",
+          "name" : "FiveDesignSystem"
         }
       ]
     }
   },
   "testTargets" : [
-    {
-      "target" : {
-        "containerPath" : "container:FiveAlarm.xcodeproj",
-        "identifier" : "B9701F8A0D6FD6FA66B6D707",
-        "name" : "FiveRootTests"
-      }
-    },
     {
       "target" : {
         "containerPath" : "container:FiveAlarm.xcodeproj",
@@ -49,6 +52,27 @@
         "containerPath" : "container:FiveAlarm.xcodeproj",
         "identifier" : "8F580B7F5D0FA7F6227AAB82",
         "name" : "FiveLoggingTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FiveAlarm.xcodeproj",
+        "identifier" : "D051E74FD9F0BB86A301E2D6",
+        "name" : "FiveAlarmListUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FiveAlarm.xcodeproj",
+        "identifier" : "62C0D9859DD704435E586DFD",
+        "name" : "FiveDesignSystemTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FiveAlarm.xcodeproj",
+        "identifier" : "B9701F8A0D6FD6FA66B6D707",
+        "name" : "FiveRootTests"
       }
     }
   ],

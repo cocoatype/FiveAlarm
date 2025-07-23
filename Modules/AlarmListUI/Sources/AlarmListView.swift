@@ -1,9 +1,11 @@
-//  Created by Geoff Pado on 12/25/24.
-//  Copyright © 2024 Cocoatype, LLC. All rights reserved.
+//  Created by Geoff Pado on 7/22/25.
+//  Copyright © 2025 Cocoatype, LLC. All rights reserved.
 
 import SwiftUI
 
-public struct ContentView: View {
+import FiveDesignSystem
+
+public struct AlarmListView: View {
     public init() {}
 
     public var body: some View {
@@ -17,18 +19,12 @@ public struct ContentView: View {
                             .fontWeight(.bold)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(
-                        Color(
-                            red: 255.0 / 255.0,
-                            green: 66.0 / 255.0,
-                            blue: 41.0 / 255.0
-                        )
-                    )
+                    .tint(Color.accent)
                 }
             }
     }
 }
 
 #Preview {
-    ContentView()
+    AlarmListView()
 }
