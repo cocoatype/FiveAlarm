@@ -9,6 +9,8 @@ public struct RootView: View {
     public init() {}
 
     public var body: some View {
-        AlarmListView()
+        NavigationStack {
+            AlarmListView()
+        }
     }
 }

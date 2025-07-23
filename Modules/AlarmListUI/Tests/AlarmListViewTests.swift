@@ -9,9 +9,19 @@ import ViewInspector
 
 @MainActor
 struct AlarmListViewTests {
-    @Test func body() throws {
+    @Test func navigationTitle() throws {
         let contentView = try AlarmListView().inspect()
-        let color = try contentView.find(ViewType.Color.self)
-        try #expect(color.value() == .clear)
+        let list = try contentView.find(ViewType.List.self)
+
+        let title = try list.navigationTitle()
+        #expect(title == Strings.AlarmListView.navigationTitle)
+    }
+
+    @Test func toolbar() throws {
+        let contentView = try AlarmListView().inspect()
+        let list = try contentView.find(ViewType.List.self)
+
+        let toolbar = try list.toolbar()
+        _ = try toolbar.find(AddButton.self)
     }
 }

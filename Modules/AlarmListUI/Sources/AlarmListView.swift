@@ -9,19 +9,13 @@ public struct AlarmListView: View {
     public init() {}
 
     public var body: some View {
-        Color.clear
-            .toolbar {
-                ToolbarSpacer(placement: .bottomBar)
-                ToolbarItem(placement: .bottomBar) {
-                    Button {
-                    } label: {
-                        Image(systemName: "plus")
-                            .fontWeight(.bold)
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(Color.accent)
-                }
-            }
+        List {
+        }
+        .navigationTitle(.constant(Strings.AlarmListView.navigationTitle))
+        .toolbar {
+            ToolbarSpacer(placement: .bottomBar)
+            ToolbarItem(placement: .bottomBar) { AddButton() }
+        }
     }
 }
 

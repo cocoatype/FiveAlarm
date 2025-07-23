@@ -3,6 +3,7 @@ import ProjectDescription
 public enum AlarmListUI {
     public static let target = Target.moduleTarget(
         name: "AlarmListUI",
+        hasResources: true,
         dependencies: [
             .target(DesignSystem.target),
         ]
